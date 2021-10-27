@@ -1,0 +1,942 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+/**********
+mixins 
+***********/
+/**********
+basic styles 
+***********/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #1f242a;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 150px;
+  height: 6px;
+  margin: 20px auto;
+}
+
+.underline div {
+  background: #37287b;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.underline .item1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.underline .item2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+}
+
+.underline .item3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8%;
+          flex: 0 0 8%;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin: 20px 0;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+  color: #1f242a;
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/**********
+nav 
+***********/
+nav {
+  background: #37287b;
+}
+
+nav article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav article .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+nav article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav article ul a {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 50px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+nav article ul a:hover {
+  color: #fba60b;
+}
+
+/**********
+header
+***********/
+header {
+  background-image: url(../img/home-header.png);
+  height: 100vh;
+}
+
+header article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  margin-top: 200px;
+  color: #fff;
+}
+
+header article div h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+header article div p {
+  margin: 25px 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+header article div a {
+  background: #fba60b;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2em;
+}
+
+header article div a:hover {
+  opacity: .8;
+}
+
+header article div a span {
+  margin-left: 5px;
+}
+
+header article div img {
+  width: 90%;
+}
+
+/**********
+uvod
+***********/
+.uvod .lead {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.uvod article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.uvod article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+  padding: 60px;
+  min-height: 450px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 10px 20px 0 #1f242a;
+          box-shadow: 0 10px 20px 0 #1f242a;
+  margin-bottom: 40px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.uvod article div i {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  height: 2.5em;
+  width: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+  border-radius: 50%;
+  color: #121212;
+}
+
+.uvod article div:hover {
+  background: linear-gradient(120deg, rgba(55, 40, 123, 0.9), rgba(73, 66, 162, 0.9));
+  cursor: pointer;
+  color: #fff;
+}
+
+.uvod article div:hover i {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+}
+
+.uvod .btn {
+  background: #fba60b;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2em;
+  margin-left: 500px;
+}
+
+.uvod .btn:hover {
+  opacity: .8;
+}
+
+.uvod .btn1 {
+  background: #fba60b;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2em;
+  background: #37287b;
+  margin-left: 30px;
+}
+
+.uvod .btn1:hover {
+  opacity: .8;
+}
+
+.uvod hr {
+  margin: 100px 0;
+  color: #e3e3ef;
+}
+
+/**********
+o nama
+***********/
+.onama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.onama article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.onama article img {
+  width: 100%;
+}
+
+/**********
+utisci
+***********/
+.utisci {
+  margin: 30px 0;
+  background: #4942a2;
+}
+
+.utisci .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.utisci .container .snimci {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 38%;
+          flex: 0 0 38%;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #fba60b;
+  overflow: hidden;
+  top: -3.75rem;
+}
+
+.utisci .container .snimci div {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.utisci .container .snimci div h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.utisci .container .snimci div p {
+  padding: 10px 0;
+}
+
+.utisci .container .snimci div .btn {
+  background: #fba60b;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  border-radius: 2em;
+  margin-bottom: 10px;
+}
+
+.utisci .container .snimci div .btn:hover {
+  opacity: .8;
+}
+
+.utisci .container h4 {
+  background-color: #fba60b;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+  font-weight: 500;
+}
+
+.utisci .container .slider {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58%;
+          flex: 0 0 58%;
+  overflow: hidden;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.utisci .container .slider small {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/**********
+radionice
+***********/
+.radionice .kalendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+}
+
+.radionice .kalendar div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.radionice .kalendar div img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.radionice .kalendar div a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #1f242a;
+}
+
+.radionice .kalendar div p {
+  position: absolute;
+  left: 48%;
+  top: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+/**********
+footer
+***********/
+footer {
+  background: #1f242a;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+}
+
+footer .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+footer .container article h4 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+footer .container article p {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+footer .container article i {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+footer .container article img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+footer .container article a {
+  color: #fff;
+}
+
+footer .container article a:hover {
+  color: #fba60b;
+}
+
+/**********
+blog
+***********/
+.blog {
+  background-image: url(../img/headers.png);
+  height: 50vh;
+}
+
+.blog h2 {
+  color: #fff;
+  text-align: start;
+  padding-top: 200px;
+}
+
+.blog img {
+  width: 50vh;
+}
+
+.blog1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 70px 0;
+}
+
+.blog1 article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  position: relative;
+}
+
+.blog1 article img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.blog1 article p {
+  position: absolute;
+  left: 62%;
+  top: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.blog1 article a {
+  color: #fff;
+  background: #1f242a;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.blog1 article a:hover {
+  opacity: .9;
+}
+
+/**********
+radioniceGlavno
+***********/
+.radioniceGlavno {
+  padding: 80px 0;
+}
+
+.radioniceGlavno .kalendarGlavno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.radioniceGlavno .kalendarGlavno div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  position: relative;
+}
+
+.radioniceGlavno .kalendarGlavno div img {
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: -40px;
+}
+
+.radioniceGlavno .kalendarGlavno div p {
+  position: absolute;
+  left: 62%;
+  top: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.radioniceGlavno .kalendarGlavno div a {
+  color: #fff;
+  background: #1f242a;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 0 30px 20px;
+}
+
+/**********
+radionica1
+***********/
+.radionica1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 70px 0;
+}
+
+.radionica1 article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
+  position: relative;
+}
+
+.radionica1 article hr {
+  margin: 15px 0;
+}
+
+.radionica1 article img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.radionica1 article h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.radionica1 article h4 span {
+  font-size: 1.3rem;
+}
+
+.radionica1 article span a {
+  position: absolute;
+  left: 62%;
+  top: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.radionica1 aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+          flex: 0 0 42%;
+  margin-top: -70vh;
+}
+
+.radionica1 aside article {
+  padding: 20px;
+  background: #4942a2;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.radionica1 aside article h6 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.radionica1 aside article a {
+  color: #fba60b;
+  font-size: .9rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.radionica1 aside article a:hover {
+  color: #fff;
+}
+
+/**********
+blogic1
+***********/
+.blogic1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 70px 0;
+}
+
+.blogic1 article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
+  position: relative;
+}
+
+.blogic1 article img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.blogic1 article span a {
+  position: absolute;
+  left: 62%;
+  top: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px #121212;
+          box-shadow: 0 5px 10px #121212;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.blogic1 aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+          flex: 0 0 42%;
+  margin-top: -140vh;
+}
+
+.blogic1 aside article {
+  padding: 20px;
+  background: #4942a2;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.blogic1 aside article h6 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.blogic1 aside article a {
+  color: #fba60b;
+  font-size: .9rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.blogic1 aside article a:hover {
+  color: #fff;
+}
+
+/**********
+Onama
+***********/
+.oNama h4 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: .oNama h4 black;
+}
+
+.oNama img {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
